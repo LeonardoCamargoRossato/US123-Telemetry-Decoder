@@ -1,0 +1,1 @@
+export default function Terminal({title,subtitle,children}:{title:string,subtitle:string,children:any}){return <section className="terminalWrap"><div className="terminal-title"><h3>{title}</h3><p>{subtitle}</p></div><div className="terminal">{children}</div></section>}

@@ -1,0 +1,1 @@
+export const speeds={0.5:2000,1:1000,2:500,5:200} as const;

@@ -1,0 +1,2 @@
+import{useState}from'react';import Header from'./components/Header';import Footer from'./components/Footer';import MonitorPage from'./pages/MonitorPage';import AlgorithmsPage from'./pages/AlgorithmsPage';
+export default function App(){const[p,setP]=useState<'monitor'|'algorithms'>('monitor');return <div className="app-shell"><Header page={p} setPage={setP}/>{p==='monitor'?<MonitorPage/>:<AlgorithmsPage/>}<Footer/></div>}

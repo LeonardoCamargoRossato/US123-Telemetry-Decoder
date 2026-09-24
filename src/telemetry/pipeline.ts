@@ -1,0 +1,1 @@
+import{parse}from'./parser';import{validate}from'./validator';import{sequence}from'./sequence';import type{SeqState,Result}from'./types';export function process(raw:string,s:SeqState):Result{const a=parse(raw);if(a.status!=='TELEMETRY_OK')return a;const b=validate(a.packet);if(b.status!=='TELEMETRY_OK')return b;return sequence(a.packet,s)}

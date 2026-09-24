@@ -1,0 +1,1 @@
+export type Packet=any; export type Status='TELEMETRY_OK'|'TELEMETRY_MISSING_FIELD'|'TELEMETRY_INVALID_TYPE'|'TELEMETRY_INVALID_RANGE'|'TELEMETRY_SEQUENCE_GAP'|'TELEMETRY_DUPLICATE_PACKET';export type Result={status:Status;packet?:Packet;field?:string;value?:unknown;expected?:string;lost?:number};export type SeqState={last?:number;received:number;lost:number};
